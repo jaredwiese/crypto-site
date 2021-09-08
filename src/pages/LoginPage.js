@@ -9,7 +9,7 @@ const Login = () => {
 
   useEffect(() => {
     if (localStorage.getItem('token') !== null) {
-      window.location.replace('http://localhost:3000/dashboard');
+      window.location.replace('https://jaredwiese.github.io/crypto-site/dashboard');
     } else {
       setLoading(false);
     }
@@ -28,7 +28,7 @@ const Login = () => {
         if (data.key) {
           localStorage.clear();
           localStorage.setItem('token', data.key);
-          window.location.replace('http://localhost:3000/dashboard');
+          window.location.replace('https://jaredwiese.github.io/crypto-site/dashboard');
         } else {
           setEmail('');
           setPassword('');
