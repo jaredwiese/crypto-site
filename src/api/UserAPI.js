@@ -43,7 +43,7 @@ const userLogin = (user) => {
 };
 
 const userSignup = (user) => {
-  return fetch(`https://cryptoapi-cp.herokuapp.com/accounts/signup/`, {
+  return fetch(`https://cryptoapi-cp.herokuapp.com/accounts/auth/register/`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
