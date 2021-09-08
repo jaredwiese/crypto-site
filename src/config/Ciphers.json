@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Caesar Cipher",
+    "value": "caesar"
+  },
+  {
+    "label": "Affine Cipher",
+    "value": "affine"
+  },
+  {
+    "label": "Simple Substitution Cipher",
+    "value": "substitution"
+  },
+  {
+    "label": "Columnar Transposition Cipher",
+    "value": "transposition"
+  },
+  {
+    "label": "Vigenere Cipher",
+    "value": "vigenere"
+  }
+]

@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+import PageWrapper from './components/PageWrapper';
+import HomePage from './pages/HomePage.js';
+import Login from './pages/LoginPage.js';
+import Signup from './pages/SignupPage.js';
+import Logout from './pages/LogoutPage';
+import Dashboard from './pages/Dashboard.js'
+import CaesarCipher from './pages/CaesarCipherPage';
+import AffineCipher from './pages/AffineCipher';
+import SecretPage from './pages/SecretPage';
+import SecretDelete from './pages/SecretDelete';
+import SecretEdit from './pages/SecretEdit';
+import SecretAdd from './pages/SecretAdd';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Router>
+        <PageWrapper />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/caesar" component={CaesarCipher} />
+          <Route exact path="/affine" component={AffineCipher} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/signup' component={Signup} />
+          <Route exact path='/logout' component={Logout} />
+          <Route exact path='/dashboard' component={Dashboard} />
+          <Route exact path='/dashboard/secrets/add' component={SecretAdd} />
+          <Route exact path='/dashboard/secrets/:secretID' component={SecretPage} />
+          <Route exact path='/dashboard/secrets/:secretID/edit' component={SecretEdit} />
+          <Route exact path='/dashboard/secrets/:secretID/delete' component={SecretDelete} />
+          </Switch>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
