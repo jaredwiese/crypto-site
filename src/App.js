@@ -1,4 +1,4 @@
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import PageWrapper from './components/PageWrapper';
 import HomePage from './pages/HomePage.js';
@@ -16,7 +16,7 @@ import SecretAdd from './pages/SecretAdd';
 const App = () => {
   return (
     <div className='App'>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <PageWrapper />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -30,7 +30,7 @@ const App = () => {
           <Route exact path='/dashboard/secrets/:secretID' component={SecretPage} />
           <Route exact path='/dashboard/secrets/:secretID/edit' component={SecretEdit} />
           <Route exact path='/dashboard/secrets/:secretID/delete' component={SecretDelete} />
-          </Switch>
+        </Switch>
       </Router>
     </div>
   );
