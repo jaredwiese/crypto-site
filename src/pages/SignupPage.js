@@ -20,7 +20,7 @@ const Signup = () => {
     e.preventDefault();
 
     const user = {
-      email: email,
+      email: email, 
       password1: password1,
       password2: password2
     };
