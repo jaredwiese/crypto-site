@@ -16,7 +16,7 @@ import SecretAdd from './pages/SecretAdd';
 const App = () => {
   return (
     <div className='App'>
-      <Router path={process.env.PUBLIC_URL + '/'}>
+      <Router >
         <PageWrapper />
         <Switch>
           <Route exact path="/" component={HomePage} />
