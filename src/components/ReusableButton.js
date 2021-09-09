@@ -5,7 +5,7 @@ class ReusableButton extends Component {
     return(
         <div className='button'>
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-          <button type='button' class='btn-primary buttonStyle' onClick={this.props.handleClick}>
+          <button type='button' className='btn-primary buttonStyle' onClick={this.props.handleClick}>
             {this.props.children}
           </button>
         </div>

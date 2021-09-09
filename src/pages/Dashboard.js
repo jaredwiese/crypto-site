@@ -10,7 +10,7 @@ const Dashboard = (props) => {
 
   useEffect(() => {
     if (localStorage.getItem('token') === null) {
-      window.location.replace('https://jaredwiese.github.io/crypto-site/login');
+      window.location.replace('https://jared-cryptography.herokuapp.com/login');
     } else {
       fetchUser()
         .then(data => {

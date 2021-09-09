@@ -6,7 +6,7 @@ const Logout = () => {
 
   useEffect(() => {
     if (localStorage.getItem('token') == null) {
-      window.location.replace('https://jaredwiese.github.io/crypto-site/login');
+      window.location.replace('https://jared-cryptography.herokuapp.com/login');
     } else {
       setLoading(false);
     }
@@ -19,7 +19,7 @@ const Logout = () => {
       .then(data => {
         console.log(data);
         localStorage.clear();
-        window.location.replace('https://jaredwiese.github.io/crypto-site/login');
+        window.location.replace('https://jared-cryptography.herokuapp.com/login');
       });
   };
 

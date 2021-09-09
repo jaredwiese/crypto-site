@@ -30,7 +30,7 @@ class SecretDelete extends Component {
     } else {
       this.setState({message: 'Secret Deleted'}, () => {
         console.log('secret deleted', this.state.message)
-        window.location.replace('https://jaredwiese.github.io/crypto-site/dashboard');
+        window.location.replace('https://jared-cryptography.herokuapp.com/dashboard');
       })
     }
   }

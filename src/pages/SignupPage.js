@@ -10,7 +10,7 @@ const Signup = () => {
 
   useEffect(() => {
     if (localStorage.getItem('token') !== null) {
-      window.location.replace('https://jaredwiese.github.io/crypto-site/dashboard');
+      window.location.replace('https://jared-cryptography.herokuapp.com/dashboard');
     } else {
       setLoading(false);
     }
@@ -30,7 +30,7 @@ const Signup = () => {
         if (data.key) {
           localStorage.clear();
           localStorage.setItem('token', data.key);
-          window.location.replace('https://jaredwiese.github.io/crypto-site/dashboard');
+          window.location.replace('https://jared-cryptography.herokuapp.com/dashboard');
         } else {
           setEmail('');
           setPassword1('');
