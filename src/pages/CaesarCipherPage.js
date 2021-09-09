@@ -43,9 +43,6 @@ class CaesarCipher extends Component {
     let plainTextIndex = 0;
 
     for (let char = 0; char < ciphertext.length; char++) {
-      console.log('a', lower.indexOf('a'))
-      console.log('shift', shift)
-      console.log('index', lower.indexOf(ciphertext[char]))
       if (upper.includes(ciphertext[char]) && (upper.indexOf(ciphertext[char]) + shift > -1)) {
         currentIndex = upper.indexOf(ciphertext[char])
         plainTextIndex = currentIndex + shift
@@ -80,7 +77,6 @@ class CaesarCipher extends Component {
       var ciphertext = document.getElementById('c').value
       var shift = -Number(document.getElementById('s').value)
       document.getElementById('p').value = this.decrypt(ciphertext, shift);
-      console.log(shift)
     };
 
     return (
