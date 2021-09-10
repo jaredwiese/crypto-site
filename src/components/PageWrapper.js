@@ -20,8 +20,9 @@ const PageWrapper = () => {
         <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav">
                 <li className="nav-item"><a className="nav-link js-scroll-trigger" href="/">Home</a></li>
-                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="/caesar">Caesar Cipher</a></li>
                 <li className="nav-item"><a className="nav-link js-scroll-trigger" href="/affine">Affine Cipher</a></li>
+                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="/caesar">Caesar Cipher</a></li>
+                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="/onetimepad">One Time Pad</a></li>
                 <li className="nav-item"><a className="nav-link js-scroll-trigger" href="/substitution">Substitution Cipher</a></li>
                 <li className="nav-item"><a className="nav-link js-scroll-trigger" href="/transposition">Transposition Cipher</a></li>
                 <li className="nav-item"><a className="nav-link js-scroll-trigger" href="/vigenere">Vigenere Cipher</a></li>

@@ -83,7 +83,7 @@ class CaesarCipher extends Component {
       <div className='row'>
         <h3>&emsp;&emsp;&emsp;&emsp;&emsp; Plain Text<br /></h3>
         <h5>
-          &emsp;  <textarea id="p" name="p" rows="4" cols="50" defaultValue='attack at dawn'></textarea>
+          &emsp;  <textarea id="p" name="p" rows="4" cols="50" defaultValue="Cry 'Havoc', and let slip the dogs of war;"></textarea>
         </h5>
         &emsp;&emsp;&emsp;&emsp;&emsp;<h5>
           <ReusableButton handleClick={handleEncrypt}>

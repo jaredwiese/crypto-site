@@ -6,8 +6,12 @@ import Login from './pages/LoginPage.js';
 import Signup from './pages/SignupPage.js';
 import Logout from './pages/LogoutPage';
 import Dashboard from './pages/Dashboard.js'
-import CaesarCipher from './pages/CaesarCipherPage';
 import AffineCipher from './pages/AffineCipher';
+import CaesarCipher from './pages/CaesarCipher';
+import OneTimePadCipher from './pages/OneTimePad';
+import SubstitutionCipher from './pages/SubstitutionCipher';
+import TranspositionCipher from './pages/TranspositionCipher';
+import VigenereCipher from './pages/VigenereCipher';
 import SecretPage from './pages/SecretPage';
 import SecretDelete from './pages/SecretDelete';
 import SecretEdit from './pages/SecretEdit';
@@ -20,8 +24,12 @@ const App = () => {
         <PageWrapper />
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/caesar" component={CaesarCipher} />
           <Route exact path="/affine" component={AffineCipher} />
+          <Route exact path="/caesar" component={CaesarCipher} />
+          <Route exact path="/onetimepad" component={OneTimePadCipher} />
+          <Route exact path="/substitution" component={SubstitutionCipher} />
+          <Route exact path="/transposition" component={TranspositionCipher} />
+          <Route exact path="/vigenere" component={VigenereCipher} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/signup' component={Signup} />
           <Route exact path='/logout' component={Logout} />
